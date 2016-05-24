@@ -37,6 +37,8 @@ TargetT my_numerice_cast(const SourceT& in)
 
 int main()
 {
+	//¼ì²âÒç³ö
+
 	try
 	{
 		my_numerice_cast<short>(100000);

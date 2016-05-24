@@ -2,6 +2,8 @@
 #include <boost/lexical_cast.hpp>
 #include <iostream>
 #include <string>
+#include "charT.hpp"
+
 
 int main()
 {
@@ -14,6 +16,12 @@ int main()
 	std::cout << s << std::endl;
 
 
+	//和自定义类互相转换
+	negative_number n = boost::lexical_cast<negative_number>("-100");
+	std::cout << n << std::endl;
+
+	int j = boost::lexical_cast<int>(n);
+	std::cout << "j : " << j << std::endl;
 
 	return 0;
 }
